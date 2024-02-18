@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name ="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,600;1,400&display=swap" rel="stylesheet">
+    <title></title>
+    <link rel="stylesheet" href="CSS\style.css">
+    <link href="https://file.myfontastic.com/ga8Rt9Qgx8vtsYSArv5ur4/icons.css" rel="stylesheet">
+    <script src="JS\script.js"></script>
+    <script src="https://kit.fontawesome.com/06f6d580d3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://unpkg.com/tippy.js@6"></script>
+<script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.min.js"></script>
+<div id="header">
+    <div class="container">
+        <nav>
+            <h1 class="logo"><span style="color: #ff004f;">Na</span>tum.</h1>
+            <ul id="sidemenus">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#activities">Activities</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>A computer science student</p>
+            <h1>Hi, I'm <span>Natum</span><br>third-year <br>student from <span style="color:red">T</span><span style="color:yellow">U</span></h1>
+        </div>
+    </div>
+</div>
+<div id="about">
+    <div class="container">
+        <div class="row-about">
+            <div class="about-col-1">
+                <img src="images/Smallimg.jpg">
+                <div class="resume" onclick="openPage('resume.html')">
+                        <div>
+                            <h2>My resume <i class="fa-solid fa-arrow-right"></i></h2>
+                        </div>
+                </div>
+            </div>
+            <div class="about-col-2">
+                <h1 class="about-me">About me</h1>
+                <h2 style="margin-bottom: 15px;">Natum Tongiang(Turk) <br>Age: 20</h2>
+                <p>I am a Computer Science student who eager to embark on an internship as an Innovation Engineer. I am passionate about exploring the frontiers of technology and applying my skills to innovative solutions. I am a quick learner, detail-oriented, and work well in teams. I am excited to gain more practical experience in the field of Innovation Engineer and contribute  my fresh perspective and technical prowess to an internship.</p>
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('experience')">Experiences</p>
+                <p class="tab-links" onclick="opentab('project')">Current-project</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>UI/UX</span><br>Designing Web interfaces and basic user flow/prototypes. </li>
+                    <li><span>Web development</span><br>Developing webpage for variety of usages and deploying webpage.</li>
+                    <li><span>IOT/Microcontorllers</span><br>Developing a hardware tools with a microcontorllers with internet intregation</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+                <ul>
+                    <li><span>2024-current</span><br>Designing and developing a webpage for
+                        Geoff Austin Associates Ltd.</li>
+                    <li><span>2023-2024</span><br>Web development/UI,UX designs internship at NexTech Asia co.,ltd</li>
+                    <li><span>2019-2020</span><br>Designed a presentation for
+                        Geoff Austin Associates Ltd.</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="project">
+                <ul>
+                    <li><span>E-commerce platform about Thailand agriculture products (FarmlyNeighbour) </span><br>Start as a start-up projects with 4 peoples in team. <br>Currently in development and looking for investors.</li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="read-more">
+        <div class="container">
+            <div class="reading-list" onclick="openPage('TUlife.html')">
+                <div>
+                    <h2>Read more about my TU life here <i class="fa-solid fa-arrow-right"></i></h2>
+                </div>
+                <div class="resume-phone" style="background-color: #ff004f;" onclick="openPage('resume.html')">
+                    <h2>My resume <i class="fa-solid fa-arrow-right"></i></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="activities">
+        <div class="activities-container" onclick="openPage('activities.html')">
+            <div>
+                <h1 class="about-me">Activities Showcase ⇀</h1>
+            </div>
+        </div>
+</div>
+<div id="services">
+    <div class="container">
+        <h1 class="about-me">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Developing & Design</h2>
+                <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque nam repudiandae
+                </p> -->
+            </div>
+            <div>
+                <i class="fa-solid fa-object-group"></i>
+                <h2>UI/UX design</h2>
+                <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque nam repudiandae
+                </p> -->
+            </div>
+            <div>
+                <i class="fa-solid fa-wifi"></i>
+                <h2>Microcontorllers & IoT</h2>
+                <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque nam repudiandae
+                </p> -->
+            </div>
+        </div>
+    </div>
+</div>
+<div id="footer">
+    <div class="row-footer">
+    <div class="container-footer">
+        <h1 class="logoFooter"><span style="color: #ff004f;">Na</span>tum.</h1>
+        <div class="contact-list">
+            <div>
+                <i class="icon-001-linkedin-1" title="Linkedin"></i>
+                <script> tippy('.icon-001-linkedin-1', {
+                    content: 'Linkedin',
+                  });</script>
+            </div>
+            <div>
+                <i class="icon-003-facebook-1" title="Facebook"></i>
+                <script> tippy('.icon-003-facebook-1', {
+                    content: 'Facebook',
+                  });</script>
+            </div>            
+            <div>
+                <i class="icon-004-github-1"  title="Github"></i>
+                <script> tippy('.icon-004-github-1', {
+                    content: 'Github',
+                  });</script>
+            </div>
+            <div>
+                <i class="icon-002-line-1" title="Line"></i>
+                <script> tippy('.icon-002-line-1', {
+                    content: 'Line',
+                  });</script>
+            </div>
+        </div>
+    <p>Computer Science student who eager to <br>embark on an internship as an Innovation Engineer.</p>
+    <i class="icon-telephone"> 081-597-7181</i><br/>
+    <i class="icon-envelope"> Tirkbaba@gmail.com</i>
+    </div>
+    <div class="container-footer2">
+        <h2 class="QuickLinks">Quick links</h2>
+        <div class="QuickLinks">
+            <a href="#about">▶ About me</a><br/>
+            <a href="#services">▶ Services</a><br/>
+            <a href="#activities">▶ Activities</a><br/>
+        </div>
+    </div>
+    <div class="container-footer3">
+        <h2 class="Contact-me">Contact me</h2>
+        <div class="contact">
+            <form name="submit-to-google-sheet">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="15" rows="10"></textarea>
+                </div>
+                <div class="row-form">
+                    <div class="col"></div>
+                    <button type="submit" class="btn-submit">Submit</button>
+                </div>
+            </form>
+            <script>
+                const scriptURL = 'https://script.google.com/macros/s/AKfycbyv8yxXVt8qevZhNwuetHUSPv8sp8uVnFRq3MOcJKIQkiA-3RBnGbSlRf54l9F3GVrO_w/exec'
+                const form = document.forms['submit-to-google-sheet']
+              
+                form.addEventListener('submit', e => {
+                  e.preventDefault()
+                  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                    .then(response => console.log('Success!', response))
+                    .catch(error => console.error('Error!', error.message))
+                });
+              </script>
+        </div>
+    </div>
+    </div>
+</div>
+</div>
+
+</body>
+</html>

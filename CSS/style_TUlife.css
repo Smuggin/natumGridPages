@@ -1,0 +1,461 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing:border-box
+}
+html{
+    scroll-behavior: smooth !important;
+}
+body{
+    scroll-behavior: smooth !important;
+    overflow-x: hidden;
+    background: #080808;
+    color:#fff;
+}
+
+#header{
+    width: 100%;
+    height:100vh;
+    background-image: url(../images/TUlife-bg.png);
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    padding : 10px 10%;
+}
+.container-footer{
+    padding : 10px;
+    padding-left: 10%;
+    background-color: #121010;
+    width: 35%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    font-size: 52px;
+}
+
+.logoFooter{
+    font-size: 36px;
+    text-align: start;
+    width: 50%;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color:#fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.3s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+}
+.header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+.header-text h1 span{
+    color: #ff004f;
+}
+
+#about{
+    padding-top:80px;
+    padding-bottom: 50px;
+    color: #ababab;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.about-col-2{
+    flex-basis:60%;
+}
+.about-me{
+    font-size: 60px;
+    font-weight: 600;
+    color:#fff;
+}
+.tab-titles{
+    display:flex;
+    margin:20px 0 40px;
+}
+.tab-links{
+    margin-right: 60px;
+    font-size:18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width:0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.3s;
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-contents ul li span{
+    color: #b54769;
+    font-size: 14px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+
+#services{
+    padding:30px 0;
+}
+.services-list{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.reading-list{
+    text-align: end;
+    cursor: pointer;
+}
+.reading-list div{
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-right: 10px;
+    border-radius: 10px;
+    transition: background 0.3s, transform 0.3s;
+}
+.reading-list div h2{
+    color: #fff;
+}
+.reading-list div:hover{
+    background: #ff004f;
+    transform: translateY(-10px);
+}
+.contact-list{
+    display:grid;
+    justify-content: start;
+    align-items: start;
+    grid-template-columns: repeat(4, 1fr);
+    width: 50%;
+}
+#TUlife-info{
+    padding-top:80px;
+    padding-bottom: 50px;
+    color: #ababab;
+}
+.services-list div{
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-right: 10px;
+    border-radius: 10px;
+    transition: background 0.3s, transform 0.3s;
+}
+.services-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.services-list div h2{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.services-list div:hover{
+    background: #ff004f;
+    transform: translateY(-10px);
+}
+.contact-list{
+    font-size: 24px;
+}
+.contact-list div{
+    display: flex;
+    justify-content: start;
+}
+.contact-list div i{
+    transition: background 0.3s, transform 0.3s;
+}
+.contact-list div i:hover{
+    color: #ff004f;
+    transform: translateY(-5px) scale(130%);
+}
+.contact-list div i:hover::after{
+    color: #ff004f;
+    transform: translateY(-5px) scale(130%);
+}
+.container-footer p{
+    font-weight: 300;
+    color:#ababab;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.container-footer i{
+    font-weight: 300;
+    color:#ababab;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.container-footer2{
+    width: 15%;
+    padding : 10px;
+    background-color: #121010;
+}
+.container-footer2 .QuickLinks{
+    margin-top: 15px;
+}
+.container-footer2 a{
+    color:#fff;
+    text-decoration: none;
+    font-size: 14px;
+    position: relative;
+}
+.container-footer2 a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.3s;
+}
+.container-footer2 a:hover::after{
+    width: 100%;
+}
+.container-footer2 br{
+    content: "";
+    display:block;
+    margin: 2px 0;
+}
+.container-footer3{
+    width: 50%;
+    padding : 10px;
+    padding-right: 10%;
+    background-color: #121010;
+}
+.container-footer3 .Contact-me{
+    margin-top: 15px;
+}
+.contact{
+    padding: 1.5rem;
+    border-radius: var(--rounded-md);
+    box-shadow: var(--shadow);
+}
+.form-group{
+    margin-bottom: 0.5rem;
+}
+.form-group label{
+    margin-bottom: .25rem;
+    display: inline-block;
+}
+.form-group input,textarea{
+    width: 100%;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    outline: none;
+    border-radius: 5px;
+    border:1px solid;
+}
+.form-group input:focus,textarea:focus{
+    border-color: blue;
+    box-shadow: 0 0 0 .25rem lightblue;
+}
+.form-group input{
+    height: 36px;
+}
+.btn-submit{
+    padding: .5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #ff004f;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    outline: none;
+}
+.btn-submit:hover{
+    transform: translateY(-5px) scale(130%);
+    transition: transform 0.3s;
+}
+.row-form {
+    display: flex;
+    flex-wrap: wrap;
+}
+.row-form .col{
+    width: 85%;
+} 
+.activities-container{
+    text-align: center;
+    height: 368px;
+    padding : 10px 10%;
+    text-decoration: underline;
+    text-decoration-color: #ff004f;
+}
+.activities-container div{
+    background: url(../images/Artboard_1.png);;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 300;
+    border-right: 10px;
+    border-radius: 10px;
+    height: 368px;
+    cursor: pointer;
+    
+}
+#activities{
+    padding-bottom: 30px;
+    transition: transform 0.3s;
+}
+#activities:hover{
+    transform: translateY(-10px) scale(110%);
+    box-shadow: #ff004f;
+}
+nav .fa-solid{
+    display: none;
+}
+/*------------------css for phone------------------*/
+@media only screen and (max-width:600px){
+    #header{
+        background-image: url(../images/TUlife-bg.png);
+    }
+    .header-text{
+        margin-top:10%;
+        font-size:16px;
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background:#ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.3s;
+    }
+    nav ul li{
+        display: block;
+        margin: 30px;
+    }
+    nav ul .fa-solid{
+        position: absolute;
+        top:25px;
+        left: 25px;
+        cursor: pointer;
+    }
+}   
+@media (max-width:900px){
+    #header{
+        background-image: url(../images/TUlife-bg.png);
+    }
+    .header-text{
+        margin-top:10%;
+        font-size:16px;
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background:#ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.3s;
+    }
+    nav ul li{
+        display: block;
+        margin: 30px;
+    }
+    nav ul .fa-solid{
+        position: absolute;
+        top:25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .activities-container div{
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        backface-visibility: hidden;
+        animation: slideBg 15s linear infinite 0s;
+        animation-timing-function: ease-in-out;
+        background-image: url('../images/342515745_1597310497346764_281778690029202034_n.jpg');
+    }
+    @keyframes slideBg{
+        0% {
+            background-image: url('../images/342667469_587591196478114_8082569684995551627_n.jpg');
+        }
+        25%{
+            background-image: url('../images/342680561_952440882456859_7521592008923903536_n.jpg');
+        }
+        50%{
+            background-image: url('../images/352749945_743623094221433_6193362972457575282_n.jpg');
+        }
+        75%{
+            background-image: url('../images/342515745_1597310497346764_281778690029202034_n.jpg');
+        }
+        100%{
+            background-image: url('../images/342667469_587591196478114_8082569684995551627_n.jpg');
+        }
+    }
+}
